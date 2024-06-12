@@ -6,7 +6,9 @@ function App() {
   return (
     <container id="rootContainer" className="flex justify-center bg-image">
       <div id="appContainer" className="max-w-[1440px] w-[100vw] bg-image">
-        <Nav />
+        <div className="xl:inline-block hidden">
+          <Nav />
+        </div>
         <HostpitalBed />
       </div>
     </container>

@@ -47,7 +47,7 @@ const SearchBox = () => {
   return (
     <div
       id="container"
-      className="bg-white rounded-2xl mt-7 flex justify-between border"
+      className="bg-white rounded-2xl mt-7 xl:flex justify-between border hidden"
     >
       <div className="p-1 flex items-center w-full">
         <Select

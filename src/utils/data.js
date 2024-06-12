@@ -57,22 +57,30 @@ export const buildingDetail = [
     sections: [
       {
         name: "طبقه اول بخش روماتولوژی",
+        subname: "روماتولوژی",
         id: 1,
       },
       {
         name: "طبقه اول بخش اورتوپدی",
+        subname: "اورتوپدی",
+
         id: 2,
       },
       {
         name: "طبقه دوم بخش روماتولوژی",
+        subname: "روماتولوژی",
+
         id: 3,
       },
       {
         name: "طبقه دوم بخش کودکان",
+        subname: "کودکان",
+
         id: 4,
       },
       {
         name: "طبقه دوم بخش اورتوپدی",
+        subname: "اورتوپدی",
         id: 5,
       },
     ],
@@ -86,50 +94,52 @@ export const buildingDetail = [
       {
         title: "اتاق R101",
         beds: [
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "reserved" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "reserved" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
       {
         title: "اتاق R102",
         beds: [
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "reserved" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "reserved" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
     ],
   },
   {
-    hospitalId: 1,
-    buildName: " ساختمان امید",
-    hospitalName: "بیمارستان امام",
+    hospitalId: 2,
+    buildName: " ساختمان نیما",
+    hospitalName: "بیمارستان شریعتی",
     sections: [
       {
         name: "طبقه اول بخش روماتولوژی",
+        subname: "روماتولوژی",
         id: 1,
       },
       {
         name: "طبقه اول بخش اورتوپدی",
+        subname: "اورتوپدی",
+
         id: 2,
       },
       {
         name: "طبقه دوم بخش روماتولوژی",
+        subname: "روماتولوژی",
+
         id: 3,
       },
       {
         name: "طبقه دوم بخش کودکان",
+        subname: "کودکان",
         id: 4,
-      },
-      {
-        name: "طبقه دوم بخش اورتوپدی",
-        id: 5,
       },
     ],
     details: [
@@ -142,22 +152,37 @@ export const buildingDetail = [
       {
         title: "اتاق R101",
         beds: [
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "reserved" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "ready" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "reserved" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
       {
         title: "اتاق R102",
         beds: [
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "ready" },
-          { bedTitle: 321, bedNo: "A121", active: "reserved" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
-          { bedTitle: 321, bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+        ],
+      },
+      {
+        title: "اتاق R103",
+        beds: [
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
+          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
     ],

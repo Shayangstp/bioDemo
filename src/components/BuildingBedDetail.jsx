@@ -1,7 +1,7 @@
 import React from "react";
 import { BedSvg } from "../assets/svg";
 
-const HospitalBedDetail = ({ detail }) => {
+const BuildingBedDetail = ({ detail }) => {
   const midIndex = Math.ceil(detail.length / 2);
   const firstColumn = detail.slice(0, midIndex);
   const secondColumn = detail.slice(midIndex);
@@ -20,12 +20,15 @@ const HospitalBedDetail = ({ detail }) => {
 
   return (
     <div id="container">
-      <div id="hospitalBuild" className="bg-[#F4F6FB] px-5 py-5 rounded-md">
+      <div
+        id="hospitalBuild"
+        className="bg-[#F4F6FB] px-5 xl:py-5 py-3 rounded-md"
+      >
         <div
           id="buildDetail"
           className="grid grid-cols-2 gap-4 justify-between"
         >
-          <div className="flex flex-col gap-2 items-start">
+          <div className="xl:flex xl:flex-col gap-2 items-start hidden col-span-1">
             {firstColumn.map((item, idx) => (
               <h1
                 key={idx}
@@ -36,7 +39,7 @@ const HospitalBedDetail = ({ detail }) => {
               </h1>
             ))}
           </div>
-          <div className="flex flex-col gap-2 items-start ms-auto">
+          <div className="flex xl:flex-col flex-row xl:gap-2 gap-10 xl:items-start justify-center  xl:ms-auto col-span-2 xl:col-span-1">
             {secondColumn.map((item, idx) => (
               <h1
                 key={idx}
@@ -56,4 +59,4 @@ const HospitalBedDetail = ({ detail }) => {
   );
 };
 
-export default HospitalBedDetail;
+export default BuildingBedDetail;
