@@ -1,28 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@material-tailwind/react";
-import { vector } from "../assets/svg";
+import { filterSvg } from "../assets/svg";
 import Select from "react-select";
-
-const options1 = [
-  { value: "1", label: "مجتمع بیمارستانی امام خمینی" },
-  { value: "2", label: "2مجتمع خمینی" },
-];
-const options2 = [
-  { value: "1", label: "همه ساختمان ها" },
-  { value: "2", label: "همه ساختمان ها" },
-];
-const options3 = [
-  { value: "1", label: "تخت قابل رزرو" },
-  { value: "2", label: "تخت قابل رزرو" },
-];
-const options4 = [
-  { value: "1", label: "انتخاب نوع تخت" },
-  { value: "2", label: "انتخاب نوع تخت" },
-];
-const options5 = [
-  { value: "1", label: "مرد" },
-  { value: "2", label: "مرد" },
-];
+import {
+  options1,
+  options2,
+  options3,
+  options4,
+  options5,
+} from "../utils/data";
 
 const customStyles = {
   control: (provided) => ({
@@ -61,14 +47,14 @@ const SearchBox = () => {
   return (
     <div
       id="container"
-      className="bg-white rounded-2xl mt-7 flex justify-between"
+      className="bg-white rounded-2xl mt-7 flex justify-between border"
     >
-      <div className="p-1 flex items-center">
+      <div className="p-1 flex items-center w-full">
         <Select
           id="hospitals"
           styles={customStyles}
           options={options1}
-          className="text-[16px] p-2 w-[250px]"
+          className="text-[16px] px-2 w-[50%]"
           value={selectedValue[0]}
           onChange={(e) => {
             handleSelect(e);
@@ -77,10 +63,10 @@ const SearchBox = () => {
         <Select
           id="buildings"
           styles={customStyles}
-          placeholder={options2[0].label}
+          placeholder="همه ساختمان ها"
           options={options2}
-          className="text-[16px] p-2 w-[250px]"
-          value={selectedValue[1]}
+          className="text-[16px] px-2 w-[40%]"
+          // value={selectedValue[1]}
           onChange={(e) => {
             handleSelect(e);
           }}
@@ -88,10 +74,10 @@ const SearchBox = () => {
         <Select
           id="reserved"
           styles={customStyles}
-          placeholder={options3[0].label}
+          placeholder="تخت قابل رزرو"
           options={options3}
-          className="text-[16px] p-2 w-[250px]"
-          value={selectedValue[2]}
+          className="text-[16px] px-2 w-[30%]"
+          // value={selectedValue[2]}
           onChange={(e) => {
             handleSelect(e);
           }}
@@ -99,10 +85,10 @@ const SearchBox = () => {
         <Select
           id="beds"
           styles={customStyles}
-          placeholder={options4[0].label}
+          placeholder="انواع تخت"
           options={options4}
-          className="text-[16px] p-2 w-[250px]"
-          value={selectedValue[3]}
+          className="text-[16px] px-2 w-[30%]"
+          // value={selectedValue[3]}
           onChange={(e) => {
             handleSelect(e);
           }}
@@ -112,14 +98,14 @@ const SearchBox = () => {
           styles={customStyles}
           placeholder={options5[0].label}
           options={options5}
-          className="text-[16px] p-2 w-[200px]"
+          className="text-[16px] px-2 w-[20%]"
           value={selectedValue[4]}
           onChange={(e) => {
             handleSelect(e);
           }}
         />
-        <button className="text-[16px] flex items-center gap-2">
-          <span>{vector}</span>
+        <button className="text-[16px] flex items-center gap-2 w-[30%]">
+          <span>{filterSvg}</span>
           <span>فیلتر بیشتر </span>
         </button>
       </div>
