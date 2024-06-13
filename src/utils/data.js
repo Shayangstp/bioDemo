@@ -158,7 +158,6 @@ export const buildingDetail = [
           { bedTitle: "321 تخت ", bedNo: "A121", active: "reserved" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
-          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
       {
@@ -170,13 +169,11 @@ export const buildingDetail = [
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
-          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
         ],
       },
       {
         title: "اتاق R103",
         beds: [
-          { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },
           { bedTitle: "321 تخت ", bedNo: "A121", active: "fill" },

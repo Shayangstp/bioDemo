@@ -19,13 +19,13 @@ const HospitalBedDetail = ({ detail }) => {
   };
 
   return (
-    <div id="container">
-      <div id="hospitalBuild" className="bg-[#F4F6FB] px-5 py-5 rounded-md">
+    <div id="container ">
+      <div id="hospitalBuild" className="bg-[#F4F6FB]  px-5 py-5 rounded-md ">
         <div
           id="buildDetail"
           className="grid grid-cols-2 gap-4 justify-between"
         >
-          <div className="flex flex-col gap-2 items-start">
+          <div className="flex flex-col gap-2 xl:items-start items-end">
             {firstColumn.map((item, idx) => (
               <h1
                 key={idx}
@@ -36,7 +36,7 @@ const HospitalBedDetail = ({ detail }) => {
               </h1>
             ))}
           </div>
-          <div className="flex flex-col gap-2 items-start ms-auto">
+          <div className="flex flex-col gap-2 xl:items-start items-start xl:ms-auto">
             {secondColumn.map((item, idx) => (
               <h1
                 key={idx}

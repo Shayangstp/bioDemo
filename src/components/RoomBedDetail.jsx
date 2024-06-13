@@ -3,7 +3,6 @@ import { roomSvg } from "../assets/svg";
 import BedCardReserve from "./BedCardReserve";
 
 const RoomBedDetail = ({ room }) => {
-  console.log(room);
   return (
     <div
       id="container"
@@ -12,7 +11,7 @@ const RoomBedDetail = ({ room }) => {
     >
       {room.map((item, idx) => {
         return (
-          <div>
+          <div key={idx}>
             <header className="inline-block">
               <div className="flex items-start gap-2 bg-[#F4F6FB] px-6 py-3 rounded-md text-[#36459B]">
                 <span>{roomSvg}</span>

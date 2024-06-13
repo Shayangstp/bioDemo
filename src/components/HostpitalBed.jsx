@@ -4,7 +4,7 @@ import HospitalBedList from "./HospitalBedList";
 
 const HostpitalBed = () => {
   return (
-    <container>
+    <div id="container">
       <header className="mt-2">
         <h1 className="text-[24px] font-bold ms-5 xl:inline-block hidden">
           تخصیص تخت
@@ -24,7 +24,7 @@ const HostpitalBed = () => {
         </header>
         <HospitalBedList />
       </div>
-    </container>
+    </div>
   );
 };
 

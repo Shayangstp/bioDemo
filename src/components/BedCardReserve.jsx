@@ -16,7 +16,10 @@ const BedCardReserve = ({ bedsDetail }) => {
     <div id="container" className="flex flex-row  flex-wrap gap-4">
       {bedsDetail.map((item, idx) => {
         return (
-          <div className="xl:w-[163px] xl:h-[205px] w-[259px] h-[112px] px-4 py-2 border flex xl:flex-col flex-row items-center gap-3 shadow rounded-md bg-white">
+          <div
+            key={idx}
+            className="xl:w-[163px] xl:h-[205px] w-[259px] h-[112px] px-4 py-2 border flex xl:flex-col flex-row items-center gap-3 shadow rounded-md bg-white"
+          >
             <header className="flex flex-col items-center ">
               <div className="flex items-center">
                 <span>

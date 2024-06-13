@@ -4,7 +4,7 @@ import { navData } from "../utils/data";
 
 const Nav = () => {
   return (
-    <container>
+    <div id="container">
       <div className="mt-6">
         <Breadcrumbs>
           {navData.map((item, idx) => {
@@ -21,7 +21,7 @@ const Nav = () => {
           })}
         </Breadcrumbs>
       </div>
-    </container>
+    </div>
   );
 };
 

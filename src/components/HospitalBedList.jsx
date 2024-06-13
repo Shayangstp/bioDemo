@@ -53,6 +53,7 @@ const HospitalBedList = () => {
           {hostpitalDetail.map((item, idx) => {
             return (
               <div
+                key={idx}
                 id="detail"
                 className="flex xl:flex-row flex-col gap-5 xl:items-start justify-between xl:p-10 px-3"
               >
@@ -69,7 +70,10 @@ const HospitalBedList = () => {
         <div id="buildDetail" className="flex flex-col justify-center ">
           {buildingDetail.map((item, idx) => {
             return (
-              <div className="flex flex-col gap-3 w-[100%] xl:p-10 p-0">
+              <div
+                key={idx}
+                className="flex flex-col gap-3 w-[100%] xl:p-10 p-0"
+              >
                 <div className="flex flex-col items-center gap-2">
                   {/* there was no time for automation this svg */}
                   <span className="xl:inline-block hidden">{buildSvg}</span>
@@ -106,7 +110,7 @@ const HospitalBedList = () => {
                             slidesPerView: 3,
                           },
                           1200: {
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                           },
                         }}
                       >
@@ -144,7 +148,15 @@ const HospitalBedList = () => {
                                   }`}
                                 >
                                   {idx + 1}
-                                  {item.subName}
+                                </span>
+                                <span
+                                  className={`xl:hidden inline-block ${
+                                    activeTab === item.id
+                                      ? "text-[#36459B] pb-2"
+                                      : "text-[#636366]"
+                                  }`}
+                                >
+                                  {item.subname}
                                 </span>
                               </div>
                             </div>
